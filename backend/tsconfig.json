@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES6",                                     /* Set the JavaScript language version for emitted JavaScript. */
+    "lib": ["ES6", "DOM"],                               /* Specify the standard library files to be included. */
+    "jsx": "react-jsx",                                  /* Use React JSX for React projects. */
+    "experimentalDecorators": true,                      /* Enable experimental support for legacy decorators. */
+
+    /* Modules */
+    "module": "commonjs",                                /* Use commonjs modules, typical for Node.js projects. */
+    "rootDir": "./src",                                  /* Specify the root folder for your source files. */
+    "outDir": "./dist",                                  /* Output folder for all compiled files. */
+    "baseUrl": "./",                                     /* Set the base URL for module resolution. */
+    "paths": {                                           /* Enable path aliasing for better module resolution */
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true,                             /* Enables interoperation between CommonJS and ES Modules. */
+    "resolveJsonModule": true,                           /* Allow importing JSON modules. */
+    "forceConsistentCasingInFileNames": true,            /* Enforce case-sensitive file imports. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                     /* Allow JavaScript files to be a part of your project. */
+    "checkJs": false,                                    /* Disable type checking for JavaScript files. */
+
+    /* Emit */
+    "declaration": true,                                 /* Generate .d.ts files alongside JavaScript. */
+    "declarationMap": true,                              /* Create sourcemaps for .d.ts files. */
+    "sourceMap": true,                                   /* Create source map files for emitted JavaScript. */
+    "removeComments": true,                              /* Remove comments in the emitted JavaScript. */
+    "emitDeclarationOnly": false,                        /* Do not only emit declaration files. */
+    "inlineSources": true,                               /* Include source files in the source maps. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "noImplicitAny": true,                               /* Raise an error for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,                            /* Ensure values are declared as null/undefined where appropriate. */
+    "strictFunctionTypes": true,                         /* Use strict checking for function types. */
+    "strictBindCallApply": true,                         /* Check arguments passed to 'bind', 'call', and 'apply'. */
+    "strictPropertyInitialization": true,                /* Ensure all properties are initialized in the constructor. */
+    "noImplicitThis": true,                              /* Raise an error for 'this' expressions with type 'any'. */
+    "useUnknownInCatchVariables": true,                  /* Catch variables default to 'unknown' instead of 'any'. */
+    "alwaysStrict": true,                                /* Parse files in strict mode and emit "use strict". */
+    "exactOptionalPropertyTypes": true,                  /* Interpret optional property types as written. */
+    "noImplicitReturns": true,                           /* Raise an error for code paths that do not explicitly return a value. */
+    "noFallthroughCasesInSwitch": true,                  /* Raise errors for fallthrough cases in switch statements. */
+
+    /* Module Resolution */
+    "moduleResolution": "node",                          /* Use Node.js-style resolution. */
+    "typeRoots": ["./node_modules/@types", "./src/types"], /* Specify folders for type definitions. */
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,                /* Allow synthetic default imports when a module doesn't have a default export. */
+
+    /* Advanced Options */
+    "skipLibCheck": true,                                /* Skip type checking of all declaration files. */
+    "incremental": true,                                 /* Enable incremental compilation for faster builds. */
+    "isolatedModules": true                              /* Ensure each file can be safely transpiled. */
+  },
+  "include": ["src/**/*"],                               /* Include all files in the src directory. */
+  "exclude": ["node_modules", "dist", "build", "scripts", "tests/**/*.test.ts", "coverage"], /* Exclude specified directories. */
+  "ts-node": {
+    "files": true,                                       /* Enable support for TS files in ts-node */
+    "require": ["tsconfig-paths/register"]               /* Register paths defined in tsconfig.json */
+  }
+}
