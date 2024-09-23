@@ -1,10 +1,11 @@
 # Ignore node_modules directories
-backend/node_modules
-frontend/node_modules
+node_modules/
+backend/node_modules/
+frontend/node_modules/
 
 # Ignore build and dist folders
-backend/dist
-frontend/build
+backend/dist/
+frontend/build/
 
 # Ignore environment files
 backend/.env
@@ -14,7 +15,7 @@ backend/.env
 Thumbs.db
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -25,5 +26,5 @@ yarn-error.log*
 .idea/
 *.swp
 
-# Ignore other build artifacts
+# Ignore TypeScript build artifacts
 *.tsbuildinfo
